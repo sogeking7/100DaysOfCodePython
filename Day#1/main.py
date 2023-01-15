@@ -1,16 +1,15 @@
-# This is a sample Python script.
+#1. Create a greeting for your program.
+print("Hello !")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#2. Ask the user for the city that they grew up in.
+city = input("What city you grew up ?")
 
+#3. Ask the user for the name of a pet.
+pet_name = input("What is the name of your pet?")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+#4. Combine the name of their city and pet and show them their band name.
+band_name = city + pet_name
 
+#5. Make sure the input cursor shows on a new line:
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Solution: https://replit.com/@appbrewery/band-name-generator-end
