@@ -22,23 +22,14 @@ for i in range(nr_numbers):
     nn += numbers[random.randint(0, len(numbers)-1)]
 for i in range(nr_symbols):
     ss += symbols[random.randint(0, len(symbols)-1)]
-
-print(f"Eazy level: {ll+ss+nn}")
+ans = ll + ss + nn
+print(f"Eazy level: {ans}")
 
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 
-
-rol = random.randint(0, 2)
-ans = ""
-
-if rol == 0:
-    ans = ll + (nn+ss if random.randint(0, 1) else ss+nn)
-elif rol == 1:
-    x = random.randint(0, 1)
-    ans = (nn if x else ss) + ll + (ss if x else nn)
-else:
-    ans = (nn+ss if random.randint(0, 1) else ss+nn) + ll
-
+ans_list = list(ans)
+random.shuffle(ans_list)
+ans = ''.join(ans_list)
 print(f"Hard level: {ans}")
